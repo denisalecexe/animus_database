@@ -1,0 +1,36 @@
+/* VARIABILI */
+:root {
+    --zero-color: #303030;
+    --first-color: #383c3f;
+    --second-color: #566165;
+    --third-color: #88929b;
+    --fourth-color: #bcc3c9;
+    --fifth-color: #6cbac2;
+    --sixth-color: #74bdc6;
+}
+
+/* UNIVERSAL TAG */
+* {
+    cursor: url('../assets/cursor/first-withe-cursor.cur'), auto;
+}
+
+/* applicandola qui invece che sul body si fa in modo che la 
+pagina eviti che il padding e il border sballino le dimensioni */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* TAG ELEMENT */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+/* ID ELEMENT */
+
+
+/* CLASS ELEMENT */
+
