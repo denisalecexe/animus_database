@@ -1,12 +1,24 @@
 /* VARIABILI */
 :root {
-    --zero-color: #303030;
-    --first-color: #383c3f;
-    --second-color: #566165;
-    --third-color: #88929b;
-    --fourth-color: #bcc3c9;
-    --fifth-color: #6cbac2;
-    --sixth-color: #74bdc6;
+    /* impostazione colori standard del sito */
+    --header-footer: #303030;
+    --icons: #bcc3c9;
+    --border: #6cbac2;
+    --text: #383c3f;
+
+    /* impostazione per il div stats */
+    --bg-stats: #2c2c2c;
+    --color-stats: #04e2ff;
+    --border-stats: #f1f1f1;
+    --shadow-stats: #f1f1f1bb;
+
+    /* gradient color per lo sfondo della pagina */
+    --bg-gradient-color-1: #88929b;
+    --bg-gradient-color-2: #566165;
+    --bg-gradient-color-3: #698a8f;
+    --bg-gradient-color-4: #6aadb6;
+    --bg-gradient-color-5: #76c9d4;
+    --bg-gradient-color-6: #5fd3e2;
 }
 
 /* UNIVERSAL TAG */
@@ -29,8 +41,57 @@ body {
     overflow: hidden;
 }
 
-/* ID ELEMENT */
+/* cursore diverso nei span e icone */
+span, i {
+    cursor: url('../assets/cursor/second-withe-cursor.cur'), auto;
+}
 
+/* ID ELEMENT */
+/* stile per l'header della pagina */
+#header {
+    background: var(--header-footer);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+
+/* stile specifico per prendere tutte le icone in una volta sola */
+#header span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    color: var(--icons);
+    height: 40px;
+    width: 40px;
+    border: 3px solid var(--border);
+    border-radius: 2px 10px 2px 2px;
+}
 
 /* CLASS ELEMENT */
+/* stile contenitore div che contiene l'icona del profilo e i segmenti ce serviranno per la sincronizzazione */
+.profile {
+    background: var(--bg-stats);
+    width: 500px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid var(--border-stats);
+    border-radius: 5px;
+}
 
+/* segmenti sincronizzazione */
+.statsProfile {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 5px;
+    width: 45px;
+    height: 5px;
+    background: var(--color-stats);
+    border-radius: 5px 40px 5px 40px;
+}
